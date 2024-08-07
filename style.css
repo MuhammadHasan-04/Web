@@ -95,41 +95,33 @@ body {
     font-size: 25px;
 }
 
-@media (max-width: 768px) {
-    .navbar ul {
-        text-align: center;
-    }
-
-    .navbar li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .navbar a {
-        padding: 10px 20px;
-    }
-
-    .about {
-        height: auto;
-        margin: 20px 10px;
-        padding: 10px;
-    }
-
-    .about h {
-        font-size: 30px;
-    }
-
-    .contact {
-        padding: 10px;
-    }
-
-    .contact a {
-        font-size: medium;
-        margin-left: 10px;
-    }
-
-    .contact a:hover {
-        font-size: 20px;
-    }
+/* .project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 10px;
+    background-color: black;
+    padding: 10px;
 }
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7 {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+}
+
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7 {
+    background-color: blue;
+} */
