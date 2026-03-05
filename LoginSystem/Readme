@@ -1,0 +1,3 @@
+# Node.js & Express Login System
+
+A simple **Login and Authentication System** built with **Node.js**, **Express.js**, and **MongoDB**. This project demonstrates how to implement user registration, login, password hashing, and basic authentication using a RESTful API.
