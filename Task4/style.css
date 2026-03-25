@@ -1,0 +1,294 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(180deg, #eef2f7, #f8fafc);
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    color: #374151;
+}
+
+header {
+    background-color: #1f2937;
+    padding: 15px 0;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #facc15;
+    background-color: #111827;
+    transform: translateY(-2px);
+}
+
+section {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+
+
+.content {
+    width: 80%;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #1f2937;
+    letter-spacing: 1px;
+}
+
+.content p {
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 0 auto 18px;
+    color: #4b5563;
+}
+
+.gallery {
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.signup {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 6px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.25);
+}
+
+form textarea {
+    resize: none;
+    height: 140px;
+}
+
+.btn {
+    margin-top: 25px;
+    width: 100%;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 14px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(59,130,246,0.4);
+}
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 14px;  
+        padding: 8px 12px; 
+    }
+     .material-icons {
+        font-size: 18px;
+    }
+
+    .navbar i {
+        font-size: 14px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .name {
+        font-size: 2.2rem;
+    }
+
+    .content {
+        padding: 35px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    section {
+        padding: 50px 15px;
+    }
+
+    .content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 200px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .content {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .name {
+        font-size: 2.2rem;
+    }
+
+    .gallery img {
+        width: 45%;
+        height: 210px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .content {
+        width: 70%;
+    }
+
+    .gallery img {
+        width: 320px;
+        height: 240px;
+    }
+
+    .name {
+        font-size: 3.5rem;
+    }
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.material-icons {
+    font-size: 20px;
+}
+
+.navbar i {
+    font-size: 16px;
+}
+
